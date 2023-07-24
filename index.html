@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Perfect Fitness</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url('gym.jpg');
+        height: 700px;
+        width: 50px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+
+    .left {
+        display: inline-block;
+
+        position: absolute;
+        left: 34px;
+        top: 20px;
+        color: white;
+
+    }
+
+    .mid {
+        display: block;
+        width: 50%;
+        margin: auto;
+        /* border: 2px solid green; */
+        position: absolute;
+        left: 250px;
+        top: 20px;
+        color: white;
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+
+    }
+
+    .navbar {
+        display: inline-block;
+        
+    }
+
+    .navbar li {
+        display: inline-block;
+
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 18px;
+    }
+    
+
+    
+
+    .navbar li a:hover,
+    .navbar li a.active{
+        text-decoration: underline;
+        color: blue;
+        
+    }
+
+    .left img {
+        height: 94px;
+        width: 133px;
+    }
+
+    .left div {
+        text-align: center;
+    }
+
+    .btn {
+        margin: 0px 9px;
+        padding: 10px;
+        background-color: black;
+        color: white;
+        text-decoration: underline;
+        border: 2px solid grey;
+        border-radius: 8px;
+        cursor: pointer;
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+
+    .btn:hover {
+        background-color: rgb(56, 54, 54);
+    }
+
+    .container {
+        border: 2px solid black;
+        margin: 11px 35px;
+        padding: 43px 120px;
+        position: absolute;
+        top: 143px;
+        width: 25%;
+        border-radius: 10px;
+        background-color: rgb(250, 214, 220);
+    }
+
+    .form-group input {
+        text-align: center;
+        border: 2px solid black;
+        display: block;
+        width: 100%;
+        margin: 11px auto;
+        font-size: 22px;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+ 
+    
+
+    .container button {
+        display: block;
+        margin: 26px auto;
+        width: 30%;
+    }
+    .services{
+         margin: 100px 995px;
+         width:fit-content;
+         padding: 10px; 
+         text-align: center;
+         background-color: gray;
+         border-radius: 5%;
+         font-family: 'Baloo Bhai 2', cursive;
+
+    }
+    .footer{
+    
+        
+    position: fixed;
+    margin: 0px 0px;
+    padding: 10px 0px; 
+    /* width:fit-content;  */
+    /* top:450px; */
+     /* left: 450px; */
+     bottom: 0;
+    width: 100%;
+    /* background-color: rgba(255, 255, 255, 0.9); */
+     background-color: rgb(198, 192, 192);
+    /* background-color: rgb(218, 222, 226); */
+     /* background-color: rgb(205, 200, 200);  */
+     /* background:none;  */
+     color: black;
+    text-align: center;
+    font-size: medium;
+    line-height: 5px;
+ } 
+ .footer  li a{
+     padding: 30px;
+     }
+   
+
+       
+</style>
+
+<body>
+    <header>
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="bg.jpg">
+            <div> Perfect Fitness</div>
+
+
+        </div>
+        <!-- mid box for navigation bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">HOME</a></li>
+                <li><a href="https://google.com">ABOUT US</a></li>
+                <li><a href="https://google.com">LET'S GET FIT</a></li>
+
+
+                <!-- <div class="dropdown">
+                    <button class="dropbtn">Our services</button>
+                    <div class="dropdown-content" id ="myDropdown">
+                        <a href="#"> Personal Trainer program </a>
+                        <a href="#"> Quick result program </a>
+                        <a href="#"> Group program</a>
+                    </div>
+                </div> -->
+                    
+                    
+                <li><a href="#">CONTACT US </a></li>
+                
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">SIGN-UP </button>
+            <button class="btn"> LOGIN</button>
+        </div>
+
+    </header>
+    <div class="container">
+        <h1> Join us now! </h1>
+        
+        <form action="noaction.php"> </form>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your age">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your gender">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your location">
+        </div>
+        <button class="btn">Submit</button>
+    </div>    
+</body>
+</html>
